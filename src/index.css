@@ -1,13 +1,223 @@
-body {
+
+/* CSS RESET COURTESY OF http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* END CSS RESET */
+
+body {
+  font-family: 'Source Serif Pro', serif;
+  background-color: rgb(249, 198, 172);
+  background-image: url(wind.svg);
+	background-repeat: no-repeat;
+	background-position-x: -2em;
+	background-size: 60%;
 }
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  line-height: 1.3em;
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4.3em;
+  margin: 1em 10% 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.5em;
+  margin: 1em 10% 1.5em;;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 2em;
+  margin: 1em 10% .5em;;
+}
+
+p {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+  width: 50%;
+  line-height: 1.5em;
+}
+
+form {
+  width: 50%;
+  margin: 2em auto;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input, textarea {
+  display: block;
+  width: 90%;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  padding: 3% 5%;
+  border: none;
+  font-family: 'Source Serif Pro', serif;
+}
+
+textarea {
+  resize: none;
+  overflow: scroll;
+  height: 7em;
+}
+
+button {
+  padding: 1em 2em;
+  float: right;
+  font-size: 1em;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 5em;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #ffeee6;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVE */
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3.4em;
+  }
+
+  h2, h3 {
+    margin-bottom: 1em;
+  }
+
+  p {
+    width: 65%;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.8em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.3em;
+    width: 70%;
+    line-height: 1.35em;
+  }
+
+  form {
+    width: 75%;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 2.4em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: 1.2em;
+    width: 80%;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+
+
+
+
+
+
+
